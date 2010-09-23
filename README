@@ -1,0 +1,52 @@
+# tee
+
+This is a scratchpad for me and nothing here should be seen as a good idea.
+
+Tee started as a port of Zach Beane's tee macro.
+This spun off rapidly into a library for an all-clojure job queue.
+This in turn can also operate as a message queue, using the identity message.
+
+I then decided to add destibuted queue functionality based on Aleph (mostly as an excuse to play with Aleph more).
+It was around this point I discovered 'work', a sweet worker/jobbing package for clojure (http://github.com/clj-sys/work).
+So, it goes without saying I leveraged that and stated aiming to build in compatibility.
+
+This soon led to me building simple distributed namespaces (now called net-ns), then I realized this was
+getting way out of hand, and I should chop thing up.
+
+TODO - discuss local parallel queueing, distributed async queueing
+
+
+## Usage
+
+FIXME: write
+
+
+## Installation
+
+FIXME: write
+
+
+## Helpful bits on vimclojure
+
+Start a nailgun (which will also open a repl),
+run the following command from the project root:
+script/nailgun
+
+Here are helpful commands
+\rt - run tests in the given namespace
+\lw - lookup word
+\li - lookup interactive
+\gw - goto word
+\sw - source lookup word
+\el - eval line
+\ep - eval paragraph
+\me - macro expand
+\m1 - macro expand1
+
+
+## License
+
+Copyright (C) 2010 Paul deGrandis
+
+Distributed under the Eclipse Public License, the same as Clojure.
+
